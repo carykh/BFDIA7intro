@@ -46,7 +46,7 @@ class Card{
     thumbs = new PImage[thumb_e-thumb_s+1];
     String let = (i%2 == 0) ? "a" : "b";
     for(int t = 0; t < thumbs.length; t++){
-      thumbs[t] = loadImage("../../HiHowsItGoing/"+let+"_images/img"+nf(t+thumb_s,4)+".png");
+      thumbs[t] = loadImage(let+"_images/img"+nf(t+thumb_s,4)+".png");
     }
   }
   void drawCard(boolean onBeat){
